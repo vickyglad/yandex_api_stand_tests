@@ -13,4 +13,4 @@ print(response.json())
 
 
 def get_users_table():
-    return None
+    return requests.get(configuration.URL_SERVICE + configuration.USERS_TABLE_PATH)
